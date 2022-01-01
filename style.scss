@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+$boxShadow: -6px -6px 9px white, 6px 6px 9px rgba(#000, 0.4);
+$boxShadowInset: inset -6px -6px 9px white, inset 6px 6px 9px rgba(#000, 0.4);
+@mixin shadow {
+  box-shadow: $boxShadow;
+}
+@mixin shadowInset {
+  box-shadow: $boxShadowInset;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+section {
+  @include shadow;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 20px;
+  border-radius: 30px;
+  .displayBox {
+    width: 80%;
+    @include shadowInset;
+    padding: 0px 60px;
+    text-align: right;
+    border-radius: 50px;
+    border: none;
+    padding: 20px 40px;
+    font-size: 30px;
+  }
+  .key {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 4%;
+    justify-content: center;
+    padding-left: 30px;
+    margin-top: 2%;
+    min-height: 300px;
+    .keys {
+      width: 50px;
+      border-radius: 50%;
+      border: none;
+      @include shadow;
+      font-size: 18px;
+      
+      &:hover {
+        background-color: #ccc;
+      }
+      &:active {
+        @include shadowInset;
+      }
+    }
+    .opkeys{
+      color: orange;
+    }
+  }
+}

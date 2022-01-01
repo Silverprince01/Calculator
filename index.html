@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="lightTheme">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neumorphic Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Calculator</h1>
+    </header>
+    <section>
+      <input class="displayBox" type="text" id="result" disabled />
+      <div class="key">
+        <input
+          type="button"
+          class="keys opkeys"
+          value="C"
+          onclick="clearScreen()"
+        />
+        <input type="button" class="keys opkeys" value="+/-" />
+        <input
+          type="button"
+          class="keys opkeys"
+          value="%"
+          onclick="display('%')"
+        />
+        <input
+          type="button"
+          class="keys opkeys"
+          value="/"
+          onclick="display('/')"
+        />
+        <input
+          type="button"
+          class="keys numkeys"
+          value="7"
+          onclick="display('7')"
+        />
+        <input
+          type="button"
+          class="keys numkeys"
+          value="8"
+          onclick="display('8')"
+        />
+        <input
+          type="button"
+          class="keys numkeys"
+          value="9"
+          onclick="display('9')"
+        />
+        <input
+          type="button"
+          class="keys opkeys"
+          value="*"
+          onclick="display('*')"
+        />
+        <input
+          type="button"
+          class="keys numkeys"
+          value="4"
+          onclick="display('4')"
+        />
+        <input
+          type="button"
+          class="keys numkeys"
+          value="5"
+          onclick="display('5')"
+        />
+        <input
+          type="button"
+          class="keys numkeys"
+          value="6"
+          onclick="display('6')"
+        />
+        <input
+          type="button"
+          class="keys opkeys"
+          value="-"
+          onclick="display('-')"
+        />
+        <input
+          type="button"
+          class="keys numkeys"
+          value="1"
+          onclick="display('1')"
+        />
+        <input
+          type="button"
+          class="keys numkeys"
+          value="2"
+          onclick="display('2')"
+        />
+        <input
+          type="button"
+          class="keys numkeys"
+          value="3"
+          onclick="display('3')"
+        />
+        <input
+          type="button"
+          class="keys opkeys"
+          value="+"
+          onclick="display('+')"
+        />
+        <p></p>
+        <input
+          type="button"
+          class="keys numkeys"
+          value="0"
+          onclick="display('0')"
+        />
+        <input
+          type="button"
+          class="keys numkeys"
+          value="."
+          onclick="display('.')"
+        />
+        <input
+          type="button"
+          class="keys opkeys"
+          value="="
+          onclick="calculate()"
+        />
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
